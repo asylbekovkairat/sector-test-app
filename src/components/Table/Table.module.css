@@ -1,0 +1,71 @@
+table {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+thead {
+  color: #fff;
+  background-color: #474955;
+  height: 54px;
+  border: none;
+}
+
+th img {
+  margin-left: 10px;
+}
+
+.title {
+  text-align: center;
+  width: 35%;
+}
+
+.id {
+  text-align: center;
+  width: 5%;
+}
+
+.desc {
+  text-align: center;
+  width: 32%;
+}
+
+.desc_td {
+  text-align: left;
+  width: 409px;
+  padding: 10px 64px 13px 56px;
+  height: 80px;
+  font-weight: 600;
+}
+
+td {
+  text-align: center;
+  height: 50px;
+}
+
+.title_td {
+  text-align: left;
+  padding-left: 30px;
+  font-weight: 600;
+}
+
+
+ td{
+  border: 1px solid #e3e6ec;
+}
+
+th {
+  cursor: default;
+}
+
+th img {
+  cursor: pointer;
+}
+
+
+@media (max-width: 650px) {
+  .id{
+    width: 11%;
+  }
+}

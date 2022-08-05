@@ -1,0 +1,15 @@
+.searchInput {
+  width: 60%;
+  height: 52px;
+  background-color: #5a5c66;
+  border: none;
+  font-size: 18px;
+  margin: 4px;
+  padding: 14px;
+}
+
+.search_icon {
+  position: relative;
+  left: -47px;
+  top: 3px;
+}

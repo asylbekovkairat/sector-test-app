@@ -1,0 +1,26 @@
+.pagination {
+  margin: 0 auto;
+  width: 35%;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination li {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.pageNum:active{
+    color: green;
+}
+
+@media (max-width: 375px){
+    .pagination{
+        width: 69%;
+    }
+}

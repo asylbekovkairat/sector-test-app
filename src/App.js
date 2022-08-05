@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useDispatch } from "react-redux";
+import { getData } from "./features/getData/getDataSlice";
+import "./App.css";
+import Table from "./components/Table/Table";
+import SearchBar from "./components/SearchBar/SearchBar";
+import PaginationMenu from "./components/PaginationMenu/PaginationMenu";
 
 function App() {
+  const dispatch = useDispatch();
+  dispatch(getData());
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SearchBar />
+      <Table />
+      <PaginationMenu/>
+    </>
   );
 }
 
